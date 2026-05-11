@@ -1,10 +1,186 @@
-body {
-    background-color: #f0f0f0;
-    font-family: Arial;
-    text-align: center;
-    margin-top: 100px;
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: darkblue;
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f0f0f,
+        #1b1b1b,
+        #101010
+    );
+}
+
+/* Внешняя рамка */
+
+.container {
+    padding: 4px;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #4b4b4b,
+        #2a2a2a,
+        #5a5a5a
+    );
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.6),
+        0 0 10px rgba(255,255,255,0.05);
+}
+
+/* Основной блок */
+
+.login-box {
+    width: 380px;
+    padding: 50px 40px;
+
+    border-radius: 28px;
+
+    background: rgba(30, 30, 30, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    font-weight: 300;
+}
+
+/* Поля */
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px 20px;
+
+    border: 2px solid #444;
+    border-radius: 50px;
+
+    background: #2a2a2a;
+    color: white;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 10px rgba(108,99,255,0.5);
+}
+
+.input-box label {
+    position: absolute;
+
+    left: 20px;
+    top: 15px;
+
+    color: #999;
+
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -10px;
+    left: 15px;
+
+    background: #1e1e1e;
+    padding: 0 8px;
+
+    font-size: 12px;
+    color: #6c63ff;
+}
+
+/* Forgot password */
+
+.forgot {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.forgot a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot a:hover {
+    color: white;
+}
+
+/* Кнопка */
+
+button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #6c63ff,
+        #4834d4
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 15px rgba(108,99,255,0.5);
+}
+
+/* Регистрация */
+
+.register {
+    text-align: center;
+    margin-top: 25px;
+
+    color: #aaa;
+}
+
+.register a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    color: white;
 }

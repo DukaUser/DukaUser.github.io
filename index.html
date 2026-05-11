@@ -1,12 +1,50 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>My Static Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello Nginx!</h1>
-    <p>Практическая работа №6.1</p>
+
+    <div class="container">
+
+        <div class="login-box">
+
+            <h1>Sign In</h1>
+
+            <form>
+
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit">LOGIN</button>
+
+                <div class="register">
+                    <p>Don't have an account?
+                        <a href="#">Sign up</a>
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
